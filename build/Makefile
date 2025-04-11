@@ -129,6 +129,19 @@ leak/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/leak.dir/build.make CMakeFiles/leak.dir/build
 .PHONY : leak/fast
 
+#=============================================================================
+# Target rules for targets named no_leak
+
+# Build rule for target.
+no_leak: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 no_leak
+.PHONY : no_leak
+
+# fast build rule for target.
+no_leak/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/no_leak.dir/build.make CMakeFiles/no_leak.dir/build
+.PHONY : no_leak/fast
+
 leak.o: leak.cpp.o
 .PHONY : leak.o
 
@@ -153,6 +166,30 @@ leak.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/leak.dir/build.make CMakeFiles/leak.dir/leak.cpp.s
 .PHONY : leak.cpp.s
 
+no_leak.o: no_leak.cpp.o
+.PHONY : no_leak.o
+
+# target to build an object file
+no_leak.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/no_leak.dir/build.make CMakeFiles/no_leak.dir/no_leak.cpp.o
+.PHONY : no_leak.cpp.o
+
+no_leak.i: no_leak.cpp.i
+.PHONY : no_leak.i
+
+# target to preprocess a source file
+no_leak.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/no_leak.dir/build.make CMakeFiles/no_leak.dir/no_leak.cpp.i
+.PHONY : no_leak.cpp.i
+
+no_leak.s: no_leak.cpp.s
+.PHONY : no_leak.s
+
+# target to generate assembly for a file
+no_leak.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/no_leak.dir/build.make CMakeFiles/no_leak.dir/no_leak.cpp.s
+.PHONY : no_leak.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,9 +199,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... leak"
+	@echo "... no_leak"
 	@echo "... leak.o"
 	@echo "... leak.i"
 	@echo "... leak.s"
+	@echo "... no_leak.o"
+	@echo "... no_leak.i"
+	@echo "... no_leak.s"
 .PHONY : help
 
 
