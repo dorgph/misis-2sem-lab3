@@ -142,6 +142,19 @@ no_leak/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/no_leak.dir/build.make CMakeFiles/no_leak.dir/build
 .PHONY : no_leak/fast
 
+#=============================================================================
+# Target rules for targets named shared_pointer
+
+# Build rule for target.
+shared_pointer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 shared_pointer
+.PHONY : shared_pointer
+
+# fast build rule for target.
+shared_pointer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared_pointer.dir/build.make CMakeFiles/shared_pointer.dir/build
+.PHONY : shared_pointer/fast
+
 leak.o: leak.cpp.o
 .PHONY : leak.o
 
@@ -190,6 +203,30 @@ no_leak.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/no_leak.dir/build.make CMakeFiles/no_leak.dir/no_leak.cpp.s
 .PHONY : no_leak.cpp.s
 
+shared_pointer.o: shared_pointer.cpp.o
+.PHONY : shared_pointer.o
+
+# target to build an object file
+shared_pointer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared_pointer.dir/build.make CMakeFiles/shared_pointer.dir/shared_pointer.cpp.o
+.PHONY : shared_pointer.cpp.o
+
+shared_pointer.i: shared_pointer.cpp.i
+.PHONY : shared_pointer.i
+
+# target to preprocess a source file
+shared_pointer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared_pointer.dir/build.make CMakeFiles/shared_pointer.dir/shared_pointer.cpp.i
+.PHONY : shared_pointer.cpp.i
+
+shared_pointer.s: shared_pointer.cpp.s
+.PHONY : shared_pointer.s
+
+# target to generate assembly for a file
+shared_pointer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared_pointer.dir/build.make CMakeFiles/shared_pointer.dir/shared_pointer.cpp.s
+.PHONY : shared_pointer.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -200,12 +237,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... leak"
 	@echo "... no_leak"
+	@echo "... shared_pointer"
 	@echo "... leak.o"
 	@echo "... leak.i"
 	@echo "... leak.s"
 	@echo "... no_leak.o"
 	@echo "... no_leak.i"
 	@echo "... no_leak.s"
+	@echo "... shared_pointer.o"
+	@echo "... shared_pointer.i"
+	@echo "... shared_pointer.s"
 .PHONY : help
 
 

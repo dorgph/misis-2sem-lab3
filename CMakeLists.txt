@@ -4,3 +4,4 @@ project(misis-2sem-lab3)
 
 add_executable(leak leak.cpp)
 add_executable(no_leak no_leak.cpp)
+add_executable(shared_pointer shared_pointer.cpp)
