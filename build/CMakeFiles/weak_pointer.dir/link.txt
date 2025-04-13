@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/weak_pointer.dir/weak_pointer.cpp.o -o weak_pointer 

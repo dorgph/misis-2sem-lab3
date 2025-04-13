@@ -155,6 +155,19 @@ shared_pointer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared_pointer.dir/build.make CMakeFiles/shared_pointer.dir/build
 .PHONY : shared_pointer/fast
 
+#=============================================================================
+# Target rules for targets named weak_pointer
+
+# Build rule for target.
+weak_pointer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 weak_pointer
+.PHONY : weak_pointer
+
+# fast build rule for target.
+weak_pointer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/weak_pointer.dir/build.make CMakeFiles/weak_pointer.dir/build
+.PHONY : weak_pointer/fast
+
 leak.o: leak.cpp.o
 .PHONY : leak.o
 
@@ -227,6 +240,30 @@ shared_pointer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared_pointer.dir/build.make CMakeFiles/shared_pointer.dir/shared_pointer.cpp.s
 .PHONY : shared_pointer.cpp.s
 
+weak_pointer.o: weak_pointer.cpp.o
+.PHONY : weak_pointer.o
+
+# target to build an object file
+weak_pointer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/weak_pointer.dir/build.make CMakeFiles/weak_pointer.dir/weak_pointer.cpp.o
+.PHONY : weak_pointer.cpp.o
+
+weak_pointer.i: weak_pointer.cpp.i
+.PHONY : weak_pointer.i
+
+# target to preprocess a source file
+weak_pointer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/weak_pointer.dir/build.make CMakeFiles/weak_pointer.dir/weak_pointer.cpp.i
+.PHONY : weak_pointer.cpp.i
+
+weak_pointer.s: weak_pointer.cpp.s
+.PHONY : weak_pointer.s
+
+# target to generate assembly for a file
+weak_pointer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/weak_pointer.dir/build.make CMakeFiles/weak_pointer.dir/weak_pointer.cpp.s
+.PHONY : weak_pointer.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -238,6 +275,7 @@ help:
 	@echo "... leak"
 	@echo "... no_leak"
 	@echo "... shared_pointer"
+	@echo "... weak_pointer"
 	@echo "... leak.o"
 	@echo "... leak.i"
 	@echo "... leak.s"
@@ -247,6 +285,9 @@ help:
 	@echo "... shared_pointer.o"
 	@echo "... shared_pointer.i"
 	@echo "... shared_pointer.s"
+	@echo "... weak_pointer.o"
+	@echo "... weak_pointer.i"
+	@echo "... weak_pointer.s"
 .PHONY : help
 
 

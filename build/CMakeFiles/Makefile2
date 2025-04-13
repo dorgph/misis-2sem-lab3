@@ -66,6 +66,7 @@ CMAKE_BINARY_DIR = /mnt/c/Users/Дарья/Desktop/misis-proga-2sem/misis-2sem-l
 all: CMakeFiles/leak.dir/all
 all: CMakeFiles/no_leak.dir/all
 all: CMakeFiles/shared_pointer.dir/all
+all: CMakeFiles/weak_pointer.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -76,6 +77,7 @@ preinstall:
 clean: CMakeFiles/leak.dir/clean
 clean: CMakeFiles/no_leak.dir/clean
 clean: CMakeFiles/shared_pointer.dir/clean
+clean: CMakeFiles/weak_pointer.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -155,6 +157,32 @@ shared_pointer: CMakeFiles/shared_pointer.dir/rule
 CMakeFiles/shared_pointer.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared_pointer.dir/build.make CMakeFiles/shared_pointer.dir/clean
 .PHONY : CMakeFiles/shared_pointer.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/weak_pointer.dir
+
+# All Build rule for target.
+CMakeFiles/weak_pointer.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/weak_pointer.dir/build.make CMakeFiles/weak_pointer.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/weak_pointer.dir/build.make CMakeFiles/weak_pointer.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Дарья/Desktop/misis-proga-2sem/misis-2sem-lab3/build/CMakeFiles --progress-num=7,8 "Built target weak_pointer"
+.PHONY : CMakeFiles/weak_pointer.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/weak_pointer.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Дарья/Desktop/misis-proga-2sem/misis-2sem-lab3/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/weak_pointer.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Дарья/Desktop/misis-proga-2sem/misis-2sem-lab3/build/CMakeFiles 0
+.PHONY : CMakeFiles/weak_pointer.dir/rule
+
+# Convenience name for target.
+weak_pointer: CMakeFiles/weak_pointer.dir/rule
+.PHONY : weak_pointer
+
+# clean rule for target.
+CMakeFiles/weak_pointer.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/weak_pointer.dir/build.make CMakeFiles/weak_pointer.dir/clean
+.PHONY : CMakeFiles/weak_pointer.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
