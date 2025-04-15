@@ -168,6 +168,19 @@ weak_pointer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/weak_pointer.dir/build.make CMakeFiles/weak_pointer.dir/build
 .PHONY : weak_pointer/fast
 
+#=============================================================================
+# Target rules for targets named unique_pointer
+
+# Build rule for target.
+unique_pointer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unique_pointer
+.PHONY : unique_pointer
+
+# fast build rule for target.
+unique_pointer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unique_pointer.dir/build.make CMakeFiles/unique_pointer.dir/build
+.PHONY : unique_pointer/fast
+
 leak.o: leak.cpp.o
 .PHONY : leak.o
 
@@ -240,6 +253,30 @@ shared_pointer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared_pointer.dir/build.make CMakeFiles/shared_pointer.dir/shared_pointer.cpp.s
 .PHONY : shared_pointer.cpp.s
 
+unique_pointer.o: unique_pointer.cpp.o
+.PHONY : unique_pointer.o
+
+# target to build an object file
+unique_pointer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unique_pointer.dir/build.make CMakeFiles/unique_pointer.dir/unique_pointer.cpp.o
+.PHONY : unique_pointer.cpp.o
+
+unique_pointer.i: unique_pointer.cpp.i
+.PHONY : unique_pointer.i
+
+# target to preprocess a source file
+unique_pointer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unique_pointer.dir/build.make CMakeFiles/unique_pointer.dir/unique_pointer.cpp.i
+.PHONY : unique_pointer.cpp.i
+
+unique_pointer.s: unique_pointer.cpp.s
+.PHONY : unique_pointer.s
+
+# target to generate assembly for a file
+unique_pointer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unique_pointer.dir/build.make CMakeFiles/unique_pointer.dir/unique_pointer.cpp.s
+.PHONY : unique_pointer.cpp.s
+
 weak_pointer.o: weak_pointer.cpp.o
 .PHONY : weak_pointer.o
 
@@ -275,6 +312,7 @@ help:
 	@echo "... leak"
 	@echo "... no_leak"
 	@echo "... shared_pointer"
+	@echo "... unique_pointer"
 	@echo "... weak_pointer"
 	@echo "... leak.o"
 	@echo "... leak.i"
@@ -285,6 +323,9 @@ help:
 	@echo "... shared_pointer.o"
 	@echo "... shared_pointer.i"
 	@echo "... shared_pointer.s"
+	@echo "... unique_pointer.o"
+	@echo "... unique_pointer.i"
+	@echo "... unique_pointer.s"
 	@echo "... weak_pointer.o"
 	@echo "... weak_pointer.i"
 	@echo "... weak_pointer.s"

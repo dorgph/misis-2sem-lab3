@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/unique_pointer.dir/unique_pointer.cpp.o -o unique_pointer 

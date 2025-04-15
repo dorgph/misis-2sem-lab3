@@ -47,4 +47,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/no_leak.dir/DependInfo.cmake"
   "CMakeFiles/shared_pointer.dir/DependInfo.cmake"
   "CMakeFiles/weak_pointer.dir/DependInfo.cmake"
+  "CMakeFiles/unique_pointer.dir/DependInfo.cmake"
   )

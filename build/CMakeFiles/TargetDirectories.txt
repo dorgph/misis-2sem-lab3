@@ -2,5 +2,6 @@
 /mnt/c/Users/Дарья/Desktop/misis-proga-2sem/misis-2sem-lab3/build/CMakeFiles/no_leak.dir
 /mnt/c/Users/Дарья/Desktop/misis-proga-2sem/misis-2sem-lab3/build/CMakeFiles/shared_pointer.dir
 /mnt/c/Users/Дарья/Desktop/misis-proga-2sem/misis-2sem-lab3/build/CMakeFiles/weak_pointer.dir
+/mnt/c/Users/Дарья/Desktop/misis-proga-2sem/misis-2sem-lab3/build/CMakeFiles/unique_pointer.dir
 /mnt/c/Users/Дарья/Desktop/misis-proga-2sem/misis-2sem-lab3/build/CMakeFiles/edit_cache.dir
 /mnt/c/Users/Дарья/Desktop/misis-proga-2sem/misis-2sem-lab3/build/CMakeFiles/rebuild_cache.dir
